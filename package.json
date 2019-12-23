@@ -1,0 +1,27 @@
+{
+  "name": "@involves/oh-loco-meu-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Plugin para usar o oh-loco-meu no seu webpapck",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/involvestecnologia/oh-loco-meu-webpack-plugin.git"
+  },
+  "author": "Involves - AsyncAwait Squad <asyncawait@involves.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/involvestecnologia/oh-loco-meu-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/involvestecnologia/oh-loco-meu-webpack-plugin#readme",
+  "dependencies": {
+    "oh-loco-meu": "https://github.com/involvestecnologia/oh-loco-meu.git#master"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  }
+}
