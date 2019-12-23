@@ -2,9 +2,9 @@
   "name": "@involves/oh-loco-meu-webpack-plugin",
   "version": "1.0.0",
   "description": "Plugin para usar o oh-loco-meu no seu webpapck",
-  "main": "dist/bundle.js",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build-example": "cd example && webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

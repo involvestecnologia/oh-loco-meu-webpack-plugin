@@ -1,3 +1,4 @@
 node_modules
 dist
-examples/i18n
+example/i18n
+example/dist

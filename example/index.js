@@ -1,0 +1,1 @@
+console.log('Here you will be able to requrie and use your .json translation from loco.biz')
