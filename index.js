@@ -13,7 +13,7 @@ class OhLocoMeuWebpackPlugin {
   }
 
   apply(compiler) {
-    compiler.hooks.beforeRun.tapPromise(pluginName, () => {
+    compiler.hooks.afterEmit.tap(pluginName, () => {
       if (!fs.existsSync(this.options.filesDir)) fs.mkdirSync(this.options.filesDir);
       const files = fs.readdirSync(this.options.filesDir)
 
@@ -24,7 +24,6 @@ class OhLocoMeuWebpackPlugin {
           this.options.filesDir
         )
       }
-      return Promise.resolve()
     })
   }
 }

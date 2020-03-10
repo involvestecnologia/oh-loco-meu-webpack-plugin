@@ -1,6 +1,6 @@
 {
   "name": "@involves/oh-loco-meu-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin para usar o oh-loco-meu no seu webpapck",
   "main": "index.js",
   "scripts": {
