@@ -16,16 +16,12 @@ class OhLocoMeuWebpackPlugin {
   apply(compiler) {
     compiler.hooks.afterEmit.tap(pluginName, () => {
       if (!fs.existsSync(this.options.filesDir)) fs.mkdirSync(this.options.filesDir);
-      const files = fs.readdirSync(this.options.filesDir)
-
-      if (!files || files.length === 0) {
-        return ohLocoMeu.get(
-          this.options.locales,
-          this.options.filesTypes,
-          this.options.filesDir,
-          this.options.contentFormat,
-        )
-      }
+      return ohLocoMeu.get(
+        this.options.locales,
+        this.options.filesTypes,
+        this.options.filesDir,
+        this.options.contentFormat,
+      )
     })
   }
 }
