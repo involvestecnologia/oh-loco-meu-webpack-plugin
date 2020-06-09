@@ -8,7 +8,6 @@ class OhLocoMeuWebpackPlugin {
       locales: ohLocoMeu.LOCALES,
       filesDir: './',
       filesTypes: ['json'],
-      contentFormat: 'i18next3',
     }
     this.options = Object.assign(defaultOptions, options)
   }
