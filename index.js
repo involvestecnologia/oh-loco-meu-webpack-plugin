@@ -4,6 +4,7 @@ const pluginName = 'OhLocoMeuWebpackPlugin';
 
 class OhLocoMeuWebpackPlugin {
   constructor(options) {
+    console.log('LOCALES: ', ohLocoMeu.LOCALES)
     const defaultOptions = {
       locales: ohLocoMeu.LOCALES,
       filesDir: './',
