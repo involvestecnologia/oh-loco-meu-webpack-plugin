@@ -1,5 +1,5 @@
 {
-  "name": "@involves/oh-loco-meu-webpack-plugin",
+  "name": "@involvestecnologia/oh-loco-meu-webpack-plugin",
   "version": "1.0.7",
   "description": "Plugin para usar o oh-loco-meu no seu webpapck",
   "main": "index.js",
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/involvestecnologia/oh-loco-meu-webpack-plugin.git"
   },
-  "author": "Involves - AsyncAwait Squad <asyncawait@involves.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "Involves <dev@involves.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/involvestecnologia/oh-loco-meu-webpack-plugin/issues"

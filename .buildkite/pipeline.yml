@@ -1,0 +1,17 @@
+steps:
+  - label: "Install"
+    command:
+      - npm install
+    agents:
+      queue: "node16"
+
+  - block: "Publish package? :rocket:"
+    if: build.branch == "master"
+
+  - label: "Publish package"
+    key: "publish"
+    command:
+      - npm publish
+    agents:
+      queue: "node16"
+    if: build.branch == "master"
